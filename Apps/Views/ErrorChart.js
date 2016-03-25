@@ -57,7 +57,7 @@ var Chart = React.createClass ({
                         name: 'BarChart',
                         color: 'gray',
                         lineWidth: 2,
-                        showDataPoint: true,
+                        showDataPoint: false,
                         data: this.state.data,
                         }]
 
@@ -97,12 +97,7 @@ var Chart = React.createClass ({
                     var [x, y] = i
                     var d = new Date(x*1000)
                     xLabels.push('-' + count)
-                    //fix for lib bug https://github.com/tomauty/react-native-chart/issues/61
-                    if (i[1] == 0){
-                        data.push(i[1]+0.01)
-                    }else{
-                        data.push(i[1])
-                    }
+                    data.push(i[1])
                     count = count - 1;
                 }
                 this.setState({

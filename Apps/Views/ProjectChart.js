@@ -57,7 +57,7 @@ var Chart = React.createClass ({
                         name: 'BarChart',
                         color: 'gray',
                         lineWidth: 2,
-                        showDataPoint: true,
+                        showDataPoint: false,
                         data: this.state.data,
                         }]
 
@@ -98,7 +98,7 @@ var Chart = React.createClass ({
                     var [x, y] = i
                     var d = new Date(x*1000)
                     xLabels.push('-' + count)
-                    data.push(i[1]+0.01)
+                    data.push(i[1])
                     count = count - 1;
                 }
                 this.setState({
