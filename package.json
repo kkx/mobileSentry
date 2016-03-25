@@ -1,0 +1,16 @@
+{
+  "name": "Sentry",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "react-native": "^0.21.0",
+    "react-native-chart": "^0.1.12",
+    "react-native-refresh-infinite-listview": "^1.0.2",
+    "react-native-vector-icons": "^1.3.2",
+    "undefined": "^0.1.0"
+  }
+}
